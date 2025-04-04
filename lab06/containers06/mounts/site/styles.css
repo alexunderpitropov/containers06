@@ -1,0 +1,90 @@
+body {
+    font-family: 'Press Start 2P', sans-serif; /* Шрифт в стиле ретро-игр */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Темный фон */
+    color: white; /* Белый текст для контраста */
+}
+
+header {
+    background: linear-gradient(45deg, #ff4500, #ff6347); /* Градиент от оранжевого до красного */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень для выделения */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Цвет при наведении */
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #ff6347;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Тень для текста */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+}
